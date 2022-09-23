@@ -45,8 +45,16 @@ body{
     justify-content: space-between;
     min-height: 100vh;
     flex-wrap:wrap;
+
+    
     }
 
+/*video responsive*/
+body video {
+    width: 70%;
+  
+}
+    
 .footer{
     /*imagen gradiente*/
     background: linear-gradient(180deg, rgba(6,137,102,1) 0%, rgba(96,96,99,1) 100%);
@@ -139,7 +147,8 @@ grid-gap: 20px;
         grid-template-rows: 200px;
     }
      
-    .container-img .box-img:nth-child(1){
+    .container-img .box-img:nth-child(1)
+    {
         grid-column-start: span 1;
     }
 
@@ -156,6 +165,13 @@ grid-gap: 20px;
 
     }  
 }
+
+
+
+
+
+
+
 
 
 /*FLEXBOX AL MAIN*/
