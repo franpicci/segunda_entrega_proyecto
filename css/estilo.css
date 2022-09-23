@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*ESTO ES EL INICIO*/
+}
+header  {
+    /*imagen gradiente*/
+    
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(14,133,102,1) 84%, rgba(96,96,99,1) 100%);
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 100;
+}
+nav a{
+    display: inline-block;
+    color: rgb(248, 247, 247);
+    margin: 0  30px;
+    border-radius:30px;
+}
+nav ul li {
+    display: inline;
+}
+nav a :hover{
+   background-color: brown; 
+   color: burlywood;
+}
+li a {
+    display: inline;
+    margin: 15px 10px;
+    padding: 15px 0px;
+    text-decoration: none;
+}
+body{
+    /*imagen gradiente*/
+    background-image: linear-gradient(0deg, rgba(0,136,102,1) 0%, rgba(96,96,99,0) 93%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: bolder;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    flex-wrap:wrap;
+    }
+
+.footer{
+    /*imagen gradiente*/
+    background: linear-gradient(180deg, rgba(6,137,102,1) 0%, rgba(96,96,99,1) 100%);
+    padding: 1em;
+    text-align: center;
+    margin-top: auto;
+   
+}
+
+ /* clientes*/
+
+
+.elementoEnbloque{
+    background-color: #068966;
+    padding: 10px 15px 5px 20px;
+    border: 5px solid;color: black;
+    margin: 10px;
+}
+
+.elementoEnlinea{
+    background-color: #606062;
+    padding: 10px 15px 5px 20px;
+    border: 4px solid;color: rgb(7, 7, 7);
+    margin: 10px;
+}
+
+/*contacto = tiene  .elementoEn bloque */
+
+
+
+/*galeria = tiene elemento en Bloque*/
+
+
+/*sobre nosotros tiene elemento en bloque*/
+
+/* FLEXBOX en clientes.html */
+.mainNav{
+    flex-basis: 50px;
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    
+
+}
+/*  ACA VA LOS CAMBIOS DEL DESAFIO CON FLEX EN EL INDEX  */
+
+.conteiner-Index{
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center
+    ;
+    
+}
+
+/*ACA APARECE GRIDS*/
+.container-img{
+width: 100%;
+max-width: 1100px;
+margin: auto;
+margin-top: 60px;
+margin-bottom: 60px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: 250px;
+grid-gap: 20px;
+}
+
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.container-img .box-img:nth-child(1) {
+   grid-column-start: span 2;
+
+}
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+@media   (max-width: 800px) {
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+     
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }
+
+}   
+
+@media screen  (max-width:500px){
+     .container-img{
+        width: 90%;
+       grid-template-columns: repeat(1, 1fr);
+            
+    }  
+    .container-img .box-img img {
+        height: 200px;
+
+    }  
+}
+
+
+/*FLEXBOX AL MAIN*/
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 35px;
+    color: #606062;
+}
+.copy{
+    text-align: center;
+    color: #606062;
+    margin: 20px 0;
+    
+}
+.Propiedades{
+    padding-top: 40px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.Venta{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    /*imagen gradiente*/
+    background: linear-gradient(63deg, rgba(14,133,102,1) 32%, rgba(96,96,99,1) 68%);
+    background-size: cover;
+    background-position: center;
+    color:black ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.Alquiler{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    /*imagen gradiente*/
+    background: linear-gradient(63deg, rgba(14,133,102,1) 32%, rgba(96,96,99,1) 68%);
+    background-size: cover;
+    background-position: center;
+    color:black ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+   /*Quiero que esto rote*/
+    transform: rotate(360deg);
+}
+.Construccion{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background: linear-gradient(63deg, rgba(14,133,102,1) 32%, rgba(96,96,99,1) 68%);
+    background-size: cover;
+    background-position: center;
+    color:black ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
